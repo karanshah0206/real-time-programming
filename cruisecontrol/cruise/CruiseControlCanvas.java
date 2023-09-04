@@ -66,7 +66,7 @@ public class CruiseControlCanvas extends BufferedCanvas {
 
         Text lStateText = (fEnabled ? fTextEnabled : fTextDisabled);
         int lRenderWidth = lStateText.getRenderWidth(aGraphics);
-        int lXPos = (getWidth() - lRenderWidth) / 20 - 2;
+        int lXPos = (getWidth() - lRenderWidth) / 2 - 20;
         lStateText.render(aGraphics, lXPos, 175);
         aGraphics.fillArc(lXPos + lRenderWidth + 20, 160, 20, 20, 0, 360);
     }
